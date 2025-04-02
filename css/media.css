@@ -1,0 +1,48 @@
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1170px;
+    }
+}
+
+@media(min-width:200px) and (max-width:575px){
+    .btn-outer{
+        position: fixed;
+        bottom: 0;
+        left: 0 !important;
+        width: 100%;
+        text-align: center !important;
+    }
+    .heroSection h1{
+        font-size: 28px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .heroSection p{
+        font-size: 16px;
+    }
+    .heroSectionInfoBtn{
+        flex-direction: column;
+    }
+    .heroSectionForm{
+        padding: 30px;
+    }
+    .highlightSection h1{
+        font-size: 28px;
+    }
+    .tabbing .tab-content{
+        padding: 1.5rem ;
+        width: 100%;
+        font-size: 16px;
+    }
+    br{
+        display: none;
+    }
+    .ourCertification .certificate {
+        margin-top: 2rem;
+    }
+    .footerSection{
+        padding-bottom: 5rem !important;
+    }
+    
+}
+
