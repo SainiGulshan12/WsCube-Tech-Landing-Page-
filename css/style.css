@@ -5,18 +5,32 @@ hr {
     margin: 0rem 0;
 }
 .section{
-    background-color: #f7faff;
+    background: var(--secondary-bg-color);
 }
+:root{
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #f7faff;
+    --secondary-color:#000000;
+    --chat-color: #27ae60;
+    --call-color: #2599fb;
+    --sky-color: #0acefe;
+    --herobtn-color: #a09e9e;
+    --icon-color: #0188aa;
+    --tabbingNav-bg-color: #f2f4f7;
+    --footer-bg-color: #00051d;
+    --footer-color: #fdf3f3b2;
+}
+
 /* baseNavbar */
 
 .chatbtn{
-    color:#27ae60;
-    border: 1px solid #27ae60;
+    color:var(--chat-color);
+    border: 1px solid var(--chat-color);
     padding: 10px 18px;
 }
 .chatbtn:hover{
-    background: #27ae60;
-    color: #ffffff;
+    background: var(--chat-color);
+    color: var(--primary-bg-color);
 }
 .chatbtn i{
     padding-right: 10px;
@@ -27,33 +41,30 @@ hr {
     transition: 0.3s;
 }
 .callbtn:hover{
-    color: #2599fb;
+    color: var(--call-color);
     background: none;
-    border: 1px solid #2599fb;
+    border: 1px solid var(--call-color);
 }
 .skyBtn{
     padding: 10px 18px;
     color: #ffffff;
-    background: linear-gradient(to Right,#0acefe,#2599fb);
+    background: linear-gradient(to Right,var(--sky-color),var(--call-color));
     
 }
 .skyBtn:hover{
     background: none;
-    border: 1px solid #2599fb;
-    color: #2599fb;
+    border: 1px solid var(--call-color);
+    color: var(--call-color);
 }
 .callbtn i{
     padding-right: 10px;
 }
 
 
-
-
-
 /* Hero Section */
 
 .heroSectionInfo p i{
-    color: #2599fb;
+    color: var(--call-color);
 }
 .heroSectionInfo p{
     font-size: 22px;
@@ -62,21 +73,21 @@ hr {
     font-size: 52px;
 }
 .heroSectionInfo h1 span{
-    background: linear-gradient(to Right,#0acefe,#2599fb);
+    background: linear-gradient(to Right,var(--sky-color),var(--call-color));
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-bottom: 1px dotted #2599fb;
+    border-bottom: 1px dotted var(--call-color);
 }
 .heroSectionInfo .heroSectionInfoBtn button:nth-child(1){
     padding: 10px 30px;
 }
 .heroSectionInfo .heroSectionInfoBtn button:nth-child(2){
     padding: 10px 18px;
-    border: 1px solid #a09e9e;
+    border: 1px solid var(--herobtn-color);
 }
 .heroSectionInfo .heroSectionInfoBtn button:nth-child(2):hover{
-    background-color: #27ae60;
-    color: #ffffff;
+    background: var(--chat-color);
+    color: var(--primary-bg-color);
     border: none;
 }
 .heroSectionForm{
@@ -88,7 +99,7 @@ hr {
 .counterSection h2{
     font-size: 30px;
     font-weight: bold;
-    color: #2599fb;
+    color: var(--call-color);
 }
 
 
@@ -110,39 +121,39 @@ hr {
 }
 .highlightSection .row .col-lg-4:nth-child(1) i{
     padding: 30px 30px;
-    color: #0188aa;
-    background-color: #e8faf5;
+    color: var(--icon-color);
+    background: #e8faf5;
 }
 .highlightSection .row .col-lg-4:nth-child(2) i{
     padding: 30px 25px;
     color: #d37f48;
-    background-color: #fae8e8;
+    background: #fae8e8;
 }
 .highlightSection .row .col-lg-4:nth-child(3) i{
     padding: 30px 25px;
     color: #9e06c4;
-    background-color: #f4e8fa;
+    background: #f4e8fa;
 }
 .highlightSection .row .col-lg-4:nth-child(4) i{
     padding: 30px 27px;
     color: #79c479;
-    background-color: #e0fadb;
+    background: #e0fadb;
 }
 .highlightSection .row .col-lg-4:nth-child(5) i{
     padding: 30px 30px;
     color: #5801aa;
-    background-color: #ece8fa;
+    background: #ece8fa;
 }
 .highlightSection .row .col-lg-4:nth-child(6) i{
     padding: 30px 28px;
     color: #bb5502;
-    background-color: #faede8;
+    background: #faede8;
 }
 .highlightSection button{
     padding: 10px 50px;
     font-size: 20px;
     font-weight: 500;
-    box-shadow: 0px 0px 5px 1px #2599fb;
+    box-shadow: 0px 0px 5px 1px var(--call-color);
     border: none;
 }
 
@@ -150,7 +161,7 @@ hr {
 /* Career Options Section */
 
 .careerOptions .options i{
-    color: #2599fb;
+    color: var(--call-color);
     font-size: 20px;
     box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.35) !important;
     padding: 10px ;
@@ -179,10 +190,10 @@ hr {
     padding: 14px;
 }
 .ourCertification .ourCertificationInfo i{
-    background-color: #f7faff;
+    background: var(--secondary-bg-color);
     padding: 25px;
     border-radius: 10px;
-    color: #0188aa;
+    color: var(--icon-color);
     font-size: 30px;
 }
 .ourCertification .ourCertificationInfo h5{
@@ -193,7 +204,7 @@ hr {
     font-size: 14px;
 }
 .ourCertification .ourCertificationInfo .svg-icon{
-    background-color: #f7faff;
+    background: var(--secondary-bg-color);
     border-radius: 10px;
     max-width: 80px;
 }
@@ -214,8 +225,8 @@ hr {
     left: 3.2rem;
     width: 10rem;
     height: 10rem;
-    border-top: 5px dotted #2599fb;
-    border-left: 5px dotted #2599fb;
+    border-top: 5px dotted var(--call-color);
+    border-left: 5px dotted var(--call-color);
 }
 .ourCertification .certificate::after{
     content: '';
@@ -223,19 +234,19 @@ hr {
     top: 0;
     left: 4.6rem;
     height: 9rem;
-    border-left: 5px dotted #2599fb;
+    border-left: 5px dotted var(--call-color);
 }
 
 
 /* Tabbing Section */
 
 .tabbing .nav-link {
-    color: #000000 ;
+    color: var(--secondary-color) ;
 }
 .tabbing .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background-color: #f2f4f7;
-    color: #000000;
-    border-bottom: 3px solid #0acefe;
+    background: var(--tabbingNav-bg-color);
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--sky-color);
     border-radius: 0;
     font-weight: 600;
 }
@@ -246,7 +257,7 @@ hr {
     font-size: 18px;
 }
 .tabbing .tab-pane li i{
-    color: #2599fb;
+    color: var(--call-color);
 }
 .tabbing .tab-pane li{
     padding: 8px;
@@ -264,33 +275,33 @@ hr {
 }
 .learningDigital .row .col-lg-4:nth-of-type(1) .item i{
     color: #f7374f;
-    background-color: #fcf2f3;
+    background: #fcf2f3;
     padding: 10px 8px;
 }
 .learningDigital .row .col-lg-4:nth-of-type(2) .item i{
     color: #375af7;
-    background-color: #ebedf8;
+    background: #ebedf8;
     padding: 10px 8px;
 }
 .learningDigital .row .col-lg-4:nth-of-type(3) .item i{
     color: #f9fc42;
-    background-color: #f9fac7;
+    background: #f9fac7;
     padding: 10px 10px;
 }
 .learningDigital .row .col-lg-4:nth-of-type(4) .item i{
     color: #c5f518a8;
-    background-color: #edfdb3a8;
+    background: #edfdb3a8;
     padding: 8px 12px;
     font-size: 30px;
 }
 .learningDigital .row .col-lg-4:nth-of-type(5) .item i{
     color: #8a37f7af;
-    background-color: #f1eaf8;
+    background: #f1eaf8;
     padding: 10px 10px;
 }
 .learningDigital .row .col-lg-4:nth-of-type(6) .item i{
     color: #fa633d;
-    background-color: #faeae6;
+    background: #faeae6;
     padding: 8px 12px;
 }
 .learningDigital button{
@@ -308,22 +319,21 @@ hr {
     width: 10%;
     height: 8%;
 }
-
 .startCourse{
-    background: linear-gradient(to right, #0acefe, #2599fb, #0188aa), url('https://www.textures4photoshop.com/tex/thumbs/transparent-plastic-texture-PNG-thumb31.png');
+    background: linear-gradient(to right, var(--sky-color), var(--call-color), var(--icon-color)), url('https://www.textures4photoshop.com/tex/thumbs/transparent-plastic-texture-PNG-thumb31.png');
     background-blend-mode: overlay;
     background-size: cover;
-    color: #ffffff;
+    color: var(--primary-bg-color);
 }
 .startCourse button{
     font-weight: 600;
     padding: 10px 38px;
-    background-color: #ffffff;
+    background: var(--primary-bg-color);
 }
 .startCourse button:hover{
-    color: #fff;
-    background-color: none !important;
-    border: 2px solid #ffffff;
+    color: var(--primary-bg-color);
+    background: none !important;
+    border: 2px solid var(--primary-bg-color);
 
 }
 
@@ -337,8 +347,8 @@ hr {
     padding-bottom: 0px;
 }
 .accordion-button:not(.collapsed) {
-    background-color: white;
-    color: #2599fb;
+    background: var(--primary-bg-color);
+    color: var(--call-color);
     box-shadow: none;
 }
 .accordion-button::after {
@@ -349,7 +359,7 @@ hr {
 }
 .accordion-Section .classButton button{
     padding: 0.63rem 3.5rem;
-    box-shadow: 0px 0px 5px 1px #2599fb;
+    box-shadow: 0px 0px 5px 1px var(--call-color);
 }
 
 
@@ -365,8 +375,8 @@ hr {
 /* Footer Section */
 
 .footerSection{
-    background-color: #00051d;
-    color: #fdf3f3b2;
+    background: var(--footer-bg-color);
+    color: var(--footer-color);
 }
 .footerSection img{
     width: 70%;
@@ -379,6 +389,6 @@ hr {
     font-size: 14px;
 }
 .footerSection .rights a{
-    color: #fdf3f3b2;
+    color: var(--footer-color);
 }
 
